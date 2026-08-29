@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">IEEE-CIS Fraud Detection</title>
+  <desc id="desc">A time-aware machine learning fraud detection workflow from transaction features through risk scoring to manual review.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1f33"/>
+      <stop offset="0.58" stop-color="#123f56"/>
+      <stop offset="1" stop-color="#0b6b72"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4cc9b0"/>
+      <stop offset="1" stop-color="#77bdfb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#03111f" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#ffffff" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="320" rx="24" fill="url(#background)"/>
+  <rect width="1200" height="320" rx="24" fill="url(#grid)"/>
+  <circle cx="1110" cy="45" r="180" fill="#4cc9b0" opacity="0.07"/>
+  <circle cx="1040" cy="300" r="150" fill="#77bdfb" opacity="0.06"/>
+
+  <g transform="translate(68 55)" filter="url(#shadow)">
+    <rect x="0" y="28" width="120" height="150" rx="14" fill="#ffffff" fill-opacity="0.1" stroke="#8ed8ee" stroke-opacity="0.5"/>
+    <rect x="20" y="51" width="80" height="15" rx="7" fill="#77bdfb" opacity="0.85"/>
+    <path d="M25 91h70M25 115h48M25 139h62" stroke="#c7edf5" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+    <circle cx="94" cy="143" r="12" fill="#f27878" opacity="0.9"/>
+    <text x="60" y="208" text-anchor="middle" fill="#a9dfea" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">TRANSACTION</text>
+
+    <path d="M148 104h78" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M214 91l18 13-18 13" fill="none" stroke="#77bdfb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(244 44)">
+      <rect width="138" height="120" rx="18" fill="#ffffff" fill-opacity="0.11" stroke="#81d4c6" stroke-opacity="0.55"/>
+      <path d="M69 22l35 13v28c0 23-15 39-35 48-20-9-35-25-35-48V35z" fill="#77bdfb" fill-opacity="0.28" stroke="#a7e4f0" stroke-width="2"/>
+      <path d="M52 64l11 11 23-27" fill="none" stroke="#4cc9b0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="69" y="137" text-anchor="middle" fill="#a9dfea" font-family="Segoe UI, Arial, sans-serif" font-size="15">RISK SCORE</text>
+    </g>
+    <text x="313" y="208" text-anchor="middle" fill="#a9dfea" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">XGBOOST</text>
+
+    <path d="M406 104h78" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M472 91l18 13-18 13" fill="none" stroke="#77bdfb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(508 34)">
+      <rect width="140" height="130" rx="16" fill="#ffffff" fill-opacity="0.1" stroke="#a7e4f0" stroke-opacity="0.65"/>
+      <path d="M26 91l24-20 22 11 37-42" fill="none" stroke="#77bdfb" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="109" cy="40" r="7" fill="#f27878"/>
+      <text x="70" y="111" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">55.2%</text>
+      <text x="70" y="134" text-anchor="middle" fill="#a9dfea" font-family="Segoe UI, Arial, sans-serif" font-size="13">TOP 5% CAPTURE</text>
+    </g>
+    <text x="578" y="208" text-anchor="middle" fill="#a9dfea" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">REVIEW QUEUE</text>
+  </g>
+
+  <g transform="translate(735 76)">
+    <text x="0" y="0" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="750" letter-spacing="0.8">IEEE-CIS FRAUD</text>
+    <text x="0" y="43" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="750" letter-spacing="0.8">DETECTION</text>
+    <rect x="0" y="68" width="340" height="5" rx="2.5" fill="url(#accent)"/>
+    <text x="0" y="112" fill="#b9e5ee" font-family="Segoe UI, Arial, sans-serif" font-size="17" letter-spacing="1.3">TIME-AWARE ML  •  XGBOOST RISK SCORING</text>
+    <text x="0" y="146" fill="#8fcbd8" font-family="Segoe UI, Arial, sans-serif" font-size="15">FEATURE ABLATION  /  LEAKAGE AUDIT  /  REVIEW CAPACITY</text>
+  </g>
+</svg>

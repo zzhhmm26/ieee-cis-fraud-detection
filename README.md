@@ -1,4 +1,21 @@
+<div align="center">
+
+![IEEE-CIS Fraud Detection](docs/assets/project_banner.svg)
+
 # IEEE-CIS 欺诈检测：时间验证与可解释特征工程
+
+**从数据审计、时间验证与特征消融，到人工审核容量评估的可复现风控机器学习项目**
+
+[![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-3.0-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![scikit--learn](https://img.shields.io/badge/scikit--learn-1.9-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-3.4-337AB7?logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/)
+![Validation](https://img.shields.io/badge/validation-chronological%2080%2F20-0F766E)
+![PR--AUC](https://img.shields.io/badge/PR--AUC-0.491739-16A34A)
+
+[当前主模型](#当前主模型) · [关键实验结果](#关键实验结果) · [复现](#复现) · [重要限制](#重要限制)
+
+</div>
 
 基于 IEEE-CIS Fraud Detection 公开竞赛数据的表格二分类项目。目标是完整学习金融风控建模流程，而不是追逐 Kaggle 排名：数据审计、时间验证、类别不平衡评价、特征消融、误差分析、数据泄漏审计和可复现训练。
 
