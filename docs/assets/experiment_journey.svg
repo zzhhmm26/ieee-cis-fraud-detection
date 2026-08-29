@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">V1 to V6 experiment journey under temporal validation</title>
+  <desc id="desc">Chronological fraud-detection experiments, showing V5 with 414 trees as the selected main model and the M-group and identity experiments as not retained.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1b2f"/>
+      <stop offset="1" stop-color="#13586a"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#39c7b5"/>
+      <stop offset="1" stop-color="#73b9eb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#03111f" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="390" rx="24" fill="url(#bg)"/>
+  <circle cx="1080" cy="35" r="170" fill="#73b9eb" opacity="0.045"/>
+  <circle cx="1040" cy="380" r="150" fill="#39c7b5" opacity="0.04"/>
+
+  <text x="64" y="58" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">EXPERIMENT JOURNEY</text>
+  <text x="64" y="87" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="15" letter-spacing="0.7">CHRONOLOGICAL 80/20 VALIDATION  •  PR-AUC  •  ONE MAIN CHANGE PER EXPERIMENT</text>
+  <rect x="64" y="106" width="1072" height="4" rx="2" fill="url(#line)" opacity="0.95"/>
+
+  <path d="M132 130H1067" stroke="#7fbad0" stroke-opacity="0.32" stroke-width="3" stroke-dasharray="7 10"/>
+  <path d="M202 120l12 10-12 10M358 120l12 10-12 10M514 120l12 10-12 10M670 120l12 10-12 10M826 120l12 10-12 10M998 120l12 10-12 10" fill="none" stroke="#73b9eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g filter="url(#shadow)">
+    <rect x="64" y="148" width="136" height="124" rx="15" fill="#ffffff" fill-opacity="0.10" stroke="#8ed8ee" stroke-opacity="0.48"/>
+    <text x="132" y="178" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">V1</text>
+    <text x="132" y="205" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">0.179</text>
+    <text x="132" y="231" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="13">XGBoost baseline</text>
+    <text x="132" y="253" text-anchor="middle" fill="#8fcbd8" font-family="Segoe UI, Arial, sans-serif" font-size="12">base features</text>
+
+    <rect x="220" y="148" width="136" height="124" rx="15" fill="#ffffff" fill-opacity="0.10" stroke="#8ed8ee" stroke-opacity="0.48"/>
+    <text x="288" y="178" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">V2</text>
+    <text x="288" y="205" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">0.208</text>
+    <text x="288" y="231" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="13">+ frequency</text>
+    <text x="288" y="253" text-anchor="middle" fill="#8fcbd8" font-family="Segoe UI, Arial, sans-serif" font-size="12">train-only maps</text>
+
+    <rect x="376" y="148" width="136" height="124" rx="15" fill="#ffffff" fill-opacity="0.10" stroke="#8ed8ee" stroke-opacity="0.48"/>
+    <text x="444" y="178" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">V3</text>
+    <text x="444" y="205" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">0.466</text>
+    <text x="444" y="231" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="13">+ anonymous C</text>
+    <text x="444" y="253" text-anchor="middle" fill="#8fcbd8" font-family="Segoe UI, Arial, sans-serif" font-size="12">largest uplift</text>
+
+    <rect x="532" y="148" width="136" height="124" rx="15" fill="#ffffff" fill-opacity="0.075" stroke="#8aa9b7" stroke-opacity="0.45"/>
+    <text x="600" y="178" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">V4</text>
+    <text x="600" y="205" text-anchor="middle" fill="#e4edf0" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">0.468</text>
+    <text x="600" y="231" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="13">+ M group</text>
+    <text x="600" y="253" text-anchor="middle" fill="#ef9b92" font-family="Segoe UI, Arial, sans-serif" font-size="12">not retained</text>
+
+    <rect x="688" y="148" width="136" height="124" rx="15" fill="#ffffff" fill-opacity="0.10" stroke="#8ed8ee" stroke-opacity="0.48"/>
+    <text x="756" y="178" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">V5</text>
+    <text x="756" y="205" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">0.483</text>
+    <text x="756" y="231" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="13">+ D + missingness</text>
+    <text x="756" y="253" text-anchor="middle" fill="#8fcbd8" font-family="Segoe UI, Arial, sans-serif" font-size="12">300 trees</text>
+
+    <rect x="844" y="140" width="152" height="140" rx="17" fill="#39c7b5" fill-opacity="0.17" stroke="#65e0cd" stroke-width="2"/>
+    <circle cx="968" cy="157" r="7" fill="#39c7b5"/>
+    <text x="920" y="178" text-anchor="middle" fill="#d9fff8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">V5 SELECTED</text>
+    <text x="920" y="208" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">0.492</text>
+    <text x="920" y="234" text-anchor="middle" fill="#c6f4ec" font-family="Segoe UI, Arial, sans-serif" font-size="13">414 trees</text>
+    <text x="920" y="257" text-anchor="middle" fill="#c6f4ec" font-family="Segoe UI, Arial, sans-serif" font-size="12">early stopping check</text>
+
+    <rect x="1016" y="148" width="120" height="124" rx="15" fill="#ffffff" fill-opacity="0.075" stroke="#8aa9b7" stroke-opacity="0.45"/>
+    <text x="1076" y="178" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">V6</text>
+    <text x="1076" y="205" text-anchor="middle" fill="#e4edf0" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">0.491</text>
+    <text x="1076" y="231" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="13">+ identity</text>
+    <text x="1076" y="253" text-anchor="middle" fill="#ef9b92" font-family="Segoe UI, Arial, sans-serif" font-size="12">not retained</text>
+  </g>
+
+  <text x="64" y="333" fill="#8fcbd8" font-family="Segoe UI, Arial, sans-serif" font-size="14">V4 and V6 are intentionally preserved: they document negative results and feature-selection discipline.</text>
+  <text x="64" y="360" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="13">Metrics are PR-AUC on the late temporal validation window; values rounded to three decimals.</text>
+</svg>
