@@ -3,13 +3,13 @@
   <desc id="desc">A time-aware machine learning fraud detection workflow from transaction features through risk scoring to manual review.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1f33"/>
-      <stop offset="0.62" stop-color="#173e55"/>
-      <stop offset="1" stop-color="#145766"/>
+      <stop offset="0" stop-color="#0a1b2f"/>
+      <stop offset="0.62" stop-color="#173751"/>
+      <stop offset="1" stop-color="#13586a"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#43c5af"/>
-      <stop offset="1" stop-color="#6caee8"/>
+      <stop offset="0" stop-color="#39c7b5"/>
+      <stop offset="1" stop-color="#73b9eb"/>
     </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#03111f" flood-opacity="0.28"/>
@@ -21,8 +21,8 @@
 
   <rect width="1200" height="320" rx="24" fill="url(#background)"/>
   <rect width="1200" height="320" rx="24" fill="url(#grid)"/>
-  <circle cx="1128" cy="35" r="165" fill="#5ec7d3" opacity="0.045"/>
-  <circle cx="1030" cy="305" r="145" fill="#43c5af" opacity="0.04"/>
+  <circle cx="1128" cy="35" r="165" fill="#73b9eb" opacity="0.04"/>
+  <circle cx="1030" cy="305" r="145" fill="#39c7b5" opacity="0.035"/>
 
   <g transform="translate(68 48)" filter="url(#shadow)">
     <rect x="0" y="34" width="116" height="126" rx="15" fill="#ffffff" fill-opacity="0.095" stroke="#8ed8ee" stroke-opacity="0.48"/>
@@ -35,19 +35,19 @@
     <path d="M190 86l15 11-15 11" fill="none" stroke="#6caee8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 
     <rect x="225" y="34" width="126" height="126" rx="15" fill="#ffffff" fill-opacity="0.105" stroke="#86d7c8" stroke-opacity="0.55"/>
-    <path d="M288 54l31 12v26c0 22-13 38-31 46-18-8-31-24-31-46V66z" fill="#6caee8" fill-opacity="0.18" stroke="#a7e4f0" stroke-width="2"/>
-    <path d="M273 92l10 10 22-25" fill="none" stroke="#43c5af" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="288" y="142" text-anchor="middle" fill="#d7f1f4" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">RISK SCORE</text>
+    <path d="M288 50l27 11v21c0 17-11 30-27 37-16-7-27-20-27-37V61z" fill="#73b9eb" fill-opacity="0.17" stroke="#a7e4f0" stroke-width="2"/>
+    <path d="M274 86l9 9 20-23" fill="none" stroke="#39c7b5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="288" y="147" text-anchor="middle" fill="#d7f1f4" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="0.4">RISK SCORE</text>
     <text x="288" y="192" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="0.5">XGBOOST</text>
 
     <path d="M379 97h58" stroke="url(#accent)" stroke-width="5" stroke-linecap="round"/>
     <path d="M426 86l15 11-15 11" fill="none" stroke="#6caee8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 
     <rect x="461" y="34" width="150" height="126" rx="15" fill="#ffffff" fill-opacity="0.105" stroke="#8ed8ee" stroke-opacity="0.5"/>
-    <path d="M483 114l20-18 19 8 30-35" fill="none" stroke="#6caee8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="552" cy="69" r="6" fill="#ef7c77"/>
-    <text x="536" y="99" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">55.2%</text>
-    <text x="536" y="128" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="12" letter-spacing="0.4">TOP 5% CAPTURE</text>
+    <path d="M483 84l16-13 15 7 18-21" fill="none" stroke="#73b9eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="532" cy="57" r="5.5" fill="#ef7c77"/>
+    <text x="536" y="115" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">55.2%</text>
+    <text x="536" y="142" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="12" letter-spacing="0.4">TOP 5% CAPTURE</text>
     <text x="536" y="192" text-anchor="middle" fill="#b7dfe8" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="0.5">REVIEW QUEUE</text>
   </g>
 
