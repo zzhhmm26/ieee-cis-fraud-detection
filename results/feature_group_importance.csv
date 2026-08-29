@@ -1,0 +1,7 @@
+feature_group,importance_sum,feature_count,source_script,note
+Business categorical features,0.374209,136,19_feature_importance_v5.py,XGBoost split-gain importance summed across one-hot-expanded business categories.
+Anonymous C group,0.370802,14,19_feature_importance_v5.py,Anonymous numeric C1-C14 fields.
+Anonymous D values,0.110464,15,19_feature_importance_v5.py,Anonymous numeric D1-D15 fields after median imputation.
+D missing indicators,0.083413,15,19_feature_importance_v5.py,Explicit 0/1 indicators for missing D values.
+Frequency encoding,0.039587,5,19_feature_importance_v5.py,Train-only frequency features for card and address fields.
+Amount and time features,0.021526,4,19_feature_importance_v5.py,Transaction amount plus derived hour/day features.

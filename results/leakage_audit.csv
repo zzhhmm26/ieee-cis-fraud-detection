@@ -1,0 +1,11 @@
+﻿feature_group,columns_or_feature,used_by_v5,construction,fit_scope,available_at_transaction_time,leakage_assessment,evidence_or_limit
+标签,isFraud,否，仅作为 y_train/y_valid,公开训练集给出的二元标签,不适用,否,已排除,只传入 model_pipeline.fit 的 y_train，并用于验证评价。
+主键,TransactionID,否,交易唯一标识,不适用,可能可得，但不应用作泛化特征,已排除,V5 未读取该列；主键可能记忆训练样本而非学习风险规律。
+原始交易字段,"TransactionAmt, ProductCD, card4, card6, P_emaildomain, R_emaildomain",是,直接来自交易表,不拟合；类别缺失填充、独热编码在训练集 fit,数据集层面假定可得,未发现标签泄漏,真实业务中的采集时点、延迟和字段含义未由公开数据集确认。
+时间与金额派生,"Transaction_Amt_Log, Transaction_Hour, Transaction_Day",是,由 TransactionAmt、TransactionDT 确定性计算,不拟合；数值填充和标准化在训练集 fit,数据集层面假定可得,未发现跨期统计泄漏,TransactionDT 是相对时间；生产环境需确认时区、时间原点和延迟。
+训练期频率编码,card1/card2/card5/addr1/addr2_frequency,是,类别在训练期出现的相对频率；验证期未见类别填 0,仅 train_part：value_counts(normalize=True),可实现，但需维护历史窗口统计,代码层面已防止验证期前视,线上必须只用交易发生前的历史数据滚动更新，不能预先统计未来交易。
+匿名 C 组,C1-C14,是,直接来自交易表的匿名数值字段,不拟合；数值填充和标准化在训练集 fit,未知,未发现代码层面标签泄漏,字段业务语义和生成时点未公开，强预测能力不等于线上可用。
+匿名 D 组与缺失模式,"D1-D15, D1_missing-D15_missing",是,D 原值；缺失指示器由 isna() 确定性计算,缺失指示器不拟合；数值填充和标准化在训练集 fit,未知,未发现代码层面标签泄漏,匿名字段与缺失机制的业务含义、生成时点和线上稳定性均未公开。
+常见但不属于本数据集的字段,isFlaggedFraud,不适用,不在 IEEE-CIS train_transaction.csv 中,不适用,不适用,不适用,通过读取原始 CSV 表头确认该字段不存在；不得把其他欺诈数据集的字段混入本项目。
+identity 表字段,"id_12, id_15, id_35-id_38, DeviceType",否,train_identity 左连接后的候选类别字段,不适用,未知,V6 消融后未保留,identity 覆盖率随时间变化；小规模 V6 时间消融无增益，且线上可得性未验证。
+官方测试集,test_transaction/test_identity,否，用于最终无标签推理,竞赛官方未来时间段数据,不参与特征选择、树数选择或阈值选择,不适用,已隔离,官方 test 没有 isFraud，不能用于报告离线泛化指标。

@@ -1,0 +1,17 @@
+# 本地环境与编辑器文件
+.venv/
+.vscode/
+.nature-figure.json
+README_ML_PROJECT_HANDOFF.md
+__pycache__/
+*.py[cod]
+
+# Kaggle 原始数据与可能很大的模型产物
+data/raw/
+*.joblib
+*.pkl
+results/figures/*.tiff
+
+# 系统文件
+.DS_Store
+Thumbs.db

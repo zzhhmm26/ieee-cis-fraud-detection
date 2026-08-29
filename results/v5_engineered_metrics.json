@@ -1,0 +1,32 @@
+{
+  "experiment": "xgb_v5_C_D_414_late_engineered",
+  "validation_scheme": "chronological_80_20",
+  "cutoff_transaction_dt": 12192853.600000001,
+  "n_train": 472432,
+  "n_valid": 118108,
+  "scale_pos_weight": 27.46147358274595,
+  "unseen_category_rates": {
+    "card1": 0.010947607274697735,
+    "card2": 0.0,
+    "card5": 0.00018627019338232804,
+    "addr1": 5.926778880346801e-05,
+    "addr2": 6.773461577539202e-05
+  },
+  "metrics": {
+    "roc_auc": 0.9075978391455901,
+    "pr_auc": 0.49173925722179873,
+    "precision_at_0_5": 0.23114886731391585,
+    "recall_at_0_5": 0.703001968503937,
+    "f1_at_0_5": 0.34790550414028254,
+    "confusion_matrix": [
+      [
+        104541,
+        9503
+      ],
+      [
+        1207,
+        2857
+      ]
+    ]
+  }
+}
