@@ -4,7 +4,6 @@
 
 # IEEE-CIS 欺诈检测：时间验证与可解释特征工程
 
-用历史交易训练模型，检验它在后续交易中的表现，以及有限审核名额能覆盖多少欺诈。
 
 [![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-3.0-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
